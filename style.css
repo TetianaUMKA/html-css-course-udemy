@@ -1,0 +1,50 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: #133b8b;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 18px;
+  text-align: center;
+}
+
+#author {
+  font-size: 18px;
+  font-style: italic;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.why-list-item {
+  font-size: 20px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#copyright {
+  font-size: 16px;
+}
