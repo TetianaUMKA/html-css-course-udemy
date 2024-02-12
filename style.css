@@ -12,6 +12,10 @@ ul {
   list-style: none;
 }
 
+li {
+  font-size: 20px;
+}
+
 p {
   color: #313441;
   font-size: 22px;
@@ -75,10 +79,6 @@ h4 {
 #author {
   font-size: 18px;
   font-style: italic;
-}
-
-.why-list-item {
-  font-size: 20px;
 }
 
 aside {
