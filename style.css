@@ -1,9 +1,4 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+body {
   font-family: sans-serif;
 }
 
@@ -17,20 +12,51 @@ ul {
   list-style: none;
 }
 
+p {
+  color: #313441;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #257cbb;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #6823ad;
+}
+
 header {
-  background-color: #eef2f5;
+  background: linear-gradient(to left, #b0d4ee, #f2f2f2, #dbdbdb, #eaeaea);
 }
 
 h1 {
-  color: #2d303b;
   font-size: 26px;
   text-transform: uppercase;
 }
 
+nav {
+  color: #257cbb;
+}
+
 .nav-link {
-  color: #2d303b;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
   font-weight: bold;
   text-decoration: none;
+}
+
+.nav-link:visited {
+  color: #257cbb;
 }
 
 h2 {
@@ -51,19 +77,13 @@ h4 {
   font-style: italic;
 }
 
-p {
-  color: #313441;
-  font-size: 22px;
-  line-height: 1.5;
-}
-
 .why-list-item {
   font-size: 20px;
 }
 
 aside {
-  border-top: solid 3px #257cbb;
-  border-bottom: solid 3px #257cbb;
+  border-top: 3px solid #257cbb;
+  border-bottom: 3px solid #257cbb;
 }
 
 .related-author {
