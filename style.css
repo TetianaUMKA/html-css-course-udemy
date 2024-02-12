@@ -35,6 +35,7 @@ a:visited {
   color: #6823ad;
 }
 
+/* HEADER */
 header {
   background: linear-gradient(to left, #b0d4ee, #f2f2f2, #dbdbdb, #eaeaea);
 }
@@ -63,17 +64,9 @@ nav {
   color: #257cbb;
 }
 
+/* ARTICLE */
 h2 {
   font-size: 28px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 18px;
-  text-align: center;
 }
 
 #author {
@@ -81,9 +74,19 @@ h4 {
   font-style: italic;
 }
 
+h3 {
+  font-size: 24px;
+}
+
+/* ASIDE */
 aside {
   border-top: 3px solid #257cbb;
   border-bottom: 3px solid #257cbb;
+}
+
+h4 {
+  font-size: 18px;
+  text-align: center;
 }
 
 .related-author {
@@ -92,6 +95,7 @@ aside {
   font-weight: bold;
 }
 
+/* FOOTER */
 #copyright {
   color: #2d303b;
   font-size: 16px;
