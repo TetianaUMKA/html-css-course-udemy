@@ -15,11 +15,6 @@ h3 {
   color: #257cbb;
 }
 
-ul {
-  list-style: square;
-  padding-left: 0;
-}
-
 ul,
 ol {
   margin-left: 40px;
@@ -63,7 +58,7 @@ header {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 28px;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
@@ -103,11 +98,13 @@ article p:last-child {
 
 h2 {
   margin-bottom: 40px;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .author-img {
   margin-bottom: 20px;
+  width: 80px;
+  height: auto;
 }
 
 #author {
@@ -118,6 +115,8 @@ h2 {
 
 .post-img {
   margin-bottom: 40px;
+  width: 600px;
+  height: auto;
 }
 
 h3 {
@@ -126,16 +125,31 @@ h3 {
   font-size: 24px;
 }
 
+.why-list {
+  list-style: square;
+  padding-left: 0;
+}
+
 /* ASIDE */
 aside {
   padding: 40px 0;
   border-top: 3px solid #257cbb;
   border-bottom: 3px solid #257cbb;
+  background-color: #f2f2f2;
 }
 
 h4 {
   font-size: 18px;
   text-align: center;
+}
+
+.related-list {
+  list-style: none;
+}
+
+.related-img {
+  width: 80px;
+  height: auto;
 }
 
 .related-author {
@@ -159,6 +173,7 @@ h4 {
   bottom: 2%;
   color: #257cbb;
 }
+
 .back:visited {
   color: #257cbb;
 }
