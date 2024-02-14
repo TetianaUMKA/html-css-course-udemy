@@ -16,8 +16,14 @@ h3 {
 }
 
 ul {
-  list-style: none;
+  list-style: square;
   padding-left: 0;
+}
+
+ul,
+ol {
+  margin-left: 40px;
+  margin-bottom: 20px;
 }
 
 li {
@@ -30,6 +36,7 @@ li:last-child {
 }
 
 p {
+  margin-bottom: 20px;
   color: #313441;
   font-size: 22px;
   line-height: 1.5;
@@ -50,14 +57,15 @@ a:visited {
 
 /* HEADER */
 header {
-  padding: 40px 20px 20px;
+  /* margin-bottom: 60px; */
+  padding: 40px 20px;
   background: linear-gradient(to left, #b0d4ee, #f2f2f2, #dbdbdb, #eaeaea);
 }
 
 h1 {
   font-size: 26px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 nav {
@@ -80,28 +88,47 @@ nav {
   color: #257cbb;
 }
 
-.nav-link:active {
+.nav-link-active {
   font-weight: bold;
   text-decoration: underline;
 }
 
 /* ARTICLE */
+article {
+  padding: 40px 0;
+}
+article p:last-child {
+  margin: 0;
+}
+
 h2 {
+  margin-bottom: 40px;
   font-size: 28px;
 }
 
+.author-img {
+  margin-bottom: 20px;
+}
+
 #author {
+  margin-bottom: 20px;
   font-size: 18px;
   font-style: italic;
 }
 
+.post-img {
+  margin-bottom: 40px;
+}
+
 h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
   font-size: 24px;
 }
 
 /* ASIDE */
 aside {
-  padding: 50px 0;
+  padding: 40px 0;
   border-top: 3px solid #257cbb;
   border-bottom: 3px solid #257cbb;
 }
@@ -123,6 +150,8 @@ h4 {
   font-size: 16px;
   letter-spacing: 0.4px;
   text-align: center;
+  margin: 0;
+  padding: 10px 0;
 }
 
 .back {
