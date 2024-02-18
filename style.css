@@ -76,6 +76,12 @@ nav {
   text-decoration: none;
   margin: 0 10px 0;
 }
+.nav-link:link:last-child {
+  margin-right: 0;
+}
+.nav-link:link:first-child {
+  margin-left: 0;
+}
 
 .nav-link:hover,
 .nav-link:focus {
