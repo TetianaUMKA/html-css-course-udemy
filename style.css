@@ -71,7 +71,7 @@ nav {
   color: #257cbb;
 }
 
-.nav-link {
+.nav-link:link {
   font-size: 18px;
   text-decoration: none;
   margin: 0 10px 0;
@@ -87,9 +87,9 @@ nav {
   color: #257cbb;
 }
 
-.nav-link-active {
+.nav-link.nav-link-active {
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 /* ARTICLE */
