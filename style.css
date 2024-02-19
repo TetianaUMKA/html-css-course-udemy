@@ -159,6 +159,26 @@ h3 {
   padding-left: 0;
 }
 
+.like-btn {
+  position: absolute;
+  bottom: 0.5%;
+  right: 2%;
+  padding: 10px;
+  min-width: 96px;
+  font-size: 18px;
+  border: 1px solid #313441;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.like-btn-hover:hover,
+.like-btn-hover:focus {
+  background-color: #eaeaea;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: -2px 1px 4px #acadb1, -2px 1px 4px #dbdbdb, 1px 1px 2px #acadb1;
+}
+
 /* ASIDE */
 aside {
   padding: 40px 0;
@@ -214,24 +234,4 @@ h4 {
 
 .back:visited {
   color: #257cbb;
-}
-
-.like-btn {
-  position: absolute;
-  bottom: 0.5%;
-  right: 2%;
-  padding: 10px;
-  min-width: 96px;
-  font-size: 22px;
-  border: 1px solid #313441;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.like-btn:hover,
-.like-btn:focus {
-  background-color: #eaeaea;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  box-shadow: -2px 1px 4px #acadb1, -2px 1px 4px #dbdbdb, 1px 1px 2px #acadb1;
 }
