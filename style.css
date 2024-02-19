@@ -5,7 +5,6 @@
 
 body {
   font-family: sans-serif;
-  position: relative;
 }
 
 .container {
@@ -151,12 +150,22 @@ aside {
 }
 
 h4 {
+  margin-bottom: 10px;
   font-size: 18px;
   text-align: center;
 }
 
 .related-list {
+  margin-bottom: 0;
   list-style: none;
+}
+
+.related-list li {
+  margin-bottom: 30px;
+}
+
+.related-list li:last-child {
+  margin-bottom: 0;
 }
 
 .related-img {
@@ -165,6 +174,7 @@ h4 {
 }
 
 .related-author {
+  margin-bottom: 0;
   color: #2d303b;
   font-size: 16px;
   font-weight: bold;
