@@ -5,6 +5,7 @@
 
 body {
   font-family: sans-serif;
+  color: #313441;
 }
 
 .container {
@@ -36,7 +37,6 @@ li:last-child {
 
 p {
   margin-bottom: 20px;
-  color: #313441;
   font-size: 22px;
   line-height: 1.5;
 }
@@ -67,6 +67,11 @@ h1 {
   margin-bottom: 40px;
 }
 
+h1::first-letter {
+  letter-spacing: 8px;
+  font-size: 32px;
+}
+
 nav {
   color: #257cbb;
 }
@@ -95,7 +100,8 @@ nav {
 
 .nav-link.nav-link-active {
   font-weight: bold;
-  /* text-decoration: underline; */
+  padding-bottom: 2px;
+  border-bottom: 2px solid #257cbb;
 }
 
 /* ARTICLE */
@@ -108,8 +114,20 @@ article p:last-child {
 }
 
 h2 {
+  /* position: relative; */
   margin-bottom: 40px;
-  font-size: 32px;
+  font-size: 36px;
+}
+
+h2::after {
+  content: "TOP";
+  position: absolute;
+  margin-left: 10px;
+  padding: 5px 15px;
+  font-size: 14px;
+  background-color: #ffe70e;
+  color: #313441;
+  display: inline-block;
 }
 
 .author-img {
@@ -175,14 +193,12 @@ h4 {
 
 .related-author {
   margin-bottom: 0;
-  color: #2d303b;
   font-size: 16px;
   font-weight: bold;
 }
 
 /* FOOTER */
 #copyright {
-  color: #2d303b;
   font-size: 16px;
   letter-spacing: 0.4px;
   text-align: center;
@@ -207,6 +223,8 @@ h4 {
   padding: 10px;
   min-width: 96px;
   font-size: 22px;
+  border: 1px solid #313441;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -214,6 +232,6 @@ h4 {
 .like-btn:focus {
   background-color: #eaeaea;
   border-radius: 4px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   box-shadow: -2px 1px 4px #acadb1, -2px 1px 4px #dbdbdb, 1px 1px 2px #acadb1;
 }
