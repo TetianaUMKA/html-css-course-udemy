@@ -115,13 +115,13 @@ article p:last-child {
   margin-bottom: 0;
 }
 
-h2 {
+.article-title {
   /* position: relative; */
   margin-bottom: 40px;
   font-size: 36px;
 }
 
-h2::after {
+.article-title::after {
   display: inline-block;
   content: "TOP";
   position: absolute;
@@ -190,7 +190,7 @@ aside {
 }
 
 h4 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 18px;
   text-align: center;
 }
