@@ -15,15 +15,6 @@
         height: 100px;
       }
 
-      a:hover,
-      a:focus {
-        text-decoration: none;
-      }
-
-      a:visited {
-        color: purple;
-      }
-
       .product {
         color: #060708;
         padding: 0;
@@ -88,22 +79,22 @@
         font-size: 20px;
       }
 
-      .product-more-info {
+      .product-more-info:link {
         display: inline-block;
         margin-bottom: 30px;
-        font-size: 14px;
+        font-size: 16px;
         color: inherit;
       }
 
-      .product-color {
-        display: inline-block;
-        padding: 10px;
-        /*   width: 20px;
-  height: 20px; */
+      .color-list {
+        display: flex;
+        gap: 10px;
       }
 
-      .product-color:not(:last-child) {
-        margin-right: 10px;
+      .color-item {
+        padding: 12px;
+        /*   width: 24px;
+  height: 24px; */
       }
 
       .black {
@@ -127,7 +118,7 @@
 
       .product-details-title {
         font-size: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         margin-top: 0;
         text-transform: uppercase;
         color: #060708;
@@ -138,8 +129,13 @@
         margin-bottom: 0;
         list-style: square;
       }
+
+      .details-list-item {
+        margin-bottom: 20px;
+      }
+
       .details-list-item:last-child {
-        margin-bottom: 0px;
+        margin-bottom: 0;
       }
 
       .add-card-btn {
@@ -202,13 +198,13 @@
                 rel="noopener noreferrer"
                 >More information &rarr;</a
               >
-              <div class="product-colors">
-                <div class="product-color black"></div>
-                <div class="product-color blue"></div>
-                <div class="product-color yellow"></div>
-                <div class="product-color red"></div>
-                <div class="product-color green"></div>
-                <div class="product-color brown"></div>
+              <div class="color-list">
+                <div class="color-item black"></div>
+                <div class="color-item blue"></div>
+                <div class="color-item yellow"></div>
+                <div class="color-item red"></div>
+                <div class="color-item green"></div>
+                <div class="color-item brown"></div>
               </div>
             </div>
             <div class="product-flex-item">
