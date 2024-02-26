@@ -60,7 +60,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 20px;
+  padding: 60px 20px;
   background: linear-gradient(to left, #b0d4ee, #f2f2f2, #dbdbdb, #eaeaea);
 }
 
@@ -122,6 +122,7 @@ h2 {
 }
 
 h2::after {
+  display: inline-block;
   content: "TOP";
   position: absolute;
   margin-left: 10px;
@@ -129,7 +130,6 @@ h2::after {
   font-size: 14px;
   background-color: #ffe70e;
   color: #313441;
-  display: inline-block;
 }
 
 .author-img {
@@ -186,11 +186,11 @@ aside {
   padding: 40px 0;
   border-top: 3px solid #257cbb;
   border-bottom: 3px solid #257cbb;
-  background-color: #f2f2f2;
+  background: linear-gradient(to left, #b0d4ee, #f2f2f2, #dbdbdb, #eaeaea);
 }
 
 h4 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 18px;
   text-align: center;
 }
@@ -200,17 +200,21 @@ h4 {
   list-style: none;
 }
 
-.related-list li {
-  margin-bottom: 30px;
-}
-
-.related-list li:last-child {
-  margin-bottom: 0;
+.related-item {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
 }
 
 .related-img {
   width: 80px;
   height: auto;
+  margin-right: 20px;
+}
+
+.related-link {
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .related-author {
