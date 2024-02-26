@@ -6,20 +6,18 @@
     <title>Challenges</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-      .container {
+      .product-container {
         position: relative;
-        margin: 10px auto;
         max-width: 980px;
+        margin: 0 auto;
+      }
+      .gap {
+        height: 100px;
       }
 
       .product-row-container {
         display: flex;
         padding: 40px 20px;
-      }
-
-      h2,
-      h3 {
-        text-transform: uppercase;
       }
 
       a:hover,
@@ -32,6 +30,7 @@
       }
 
       .product {
+        color: #060708;
         padding: 0;
         border: 4px solid black;
       }
@@ -41,33 +40,36 @@
         font-size: 22px;
         text-align: center;
         text-transform: uppercase;
+        color: #060708;
         background-color: #eaeaea;
       }
 
       .sale-remark {
         position: absolute;
-        top: 10px;
+        top: 5px;
         left: -20px;
         display: inline-block;
-        padding: 8px 15px;
+        padding: 4px 8px;
+        margin: 0;
+        font-size: 16px;
         text-transform: uppercase;
-        font-weight: bold;
         letter-spacing: 3px;
         color: #ffffff;
         background-color: #ff1a1a;
       }
 
-      .product-img {
-        margin-bottom: 40px;
+      .price-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
 
       .price {
-        margin-bottom: 15px;
         font-size: 24px;
+        margin-bottom: 0;
       }
 
       .shipping {
-        margin-bottom: 30px;
         font-size: 14px;
         font-weight: bold;
         text-transform: uppercase;
@@ -83,10 +85,6 @@
         margin-bottom: 30px;
         font-size: 14px;
         color: inherit;
-      }
-
-      .product-colors {
-        margin-bottom: 40px;
       }
 
       .product-color {
@@ -122,10 +120,13 @@
       .product-details-title {
         font-size: 16px;
         margin-bottom: 10px;
+        text-transform: uppercase;
+        color: #060708;
       }
 
       .product-details-list {
         margin-left: 20px;
+        margin-bottom: 0;
         list-style: square;
       }
       .details-list-item:not(last-child) {
@@ -137,16 +138,16 @@
         font-size: 22px;
         text-transform: uppercase;
         color: white;
-        background-color: black;
+        background-color: #060708;
         border: none;
         width: 100%;
       }
 
       .add-card-btn:hover,
       .add-card-btn:focus {
-        color: #000;
+        color: #060708;
         background-color: #fff;
-        border-top: 4px solid #000;
+        border-top: 4px solid #060708;
       }
     </style>
   </head>
@@ -164,57 +165,62 @@
           <a class="nav-link" href="./css-grid.html">CSS Grid</a>
         </nav>
       </header>
-      <a class="back" href="./index.html"><span>←</span>Back</a>
-    </div>
-    <div class="container">
-      <article class="product">
-        <h2 class="product-title">Converse Chuck Taylor All Star Low Top</h2>
-        <p class="sale-remark">Sale</p>
-        <div class="product-row-container">
-          <img
-            class="product-img"
-            src="https://i.ibb.co/Jr7Wh1d/challenges.jpg"
-            alt="Shoes on feet"
-            width="250"
-          />
-          <div>
-            <p class="price"><strong>$65.00</strong></p>
-            <p class="shipping">Free shipping</p>
-            <p class="product-discr">
-              Ready to dress up or down, these classic canvas Chucks are an
-              everyday wardrobe staple.
-            </p>
-            <a
-              class="product-more-info"
-              href="https://www.converse.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              >More information &rarr;</a
-            >
-            <div class="product-colors">
-              <div class="product-color black"></div>
-              <div class="product-color blue"></div>
-              <div class="product-color yellow"></div>
-              <div class="product-color red"></div>
-              <div class="product-color green"></div>
-              <div class="product-color brown"></div>
+      <div class="gap"></div>
+      <div class="product-container">
+        <article class="product">
+          <h2 class="product-title">Converse Chuck Taylor All Star Low Top</h2>
+          <p class="sale-remark">Sale</p>
+          <div class="product-row-container">
+            <img
+              class="product-img"
+              src="https://i.ibb.co/Jr7Wh1d/challenges.jpg"
+              alt="Shoes on feet"
+              width="250"
+            />
+            <div>
+              <div class="price-row">
+                <p class="price"><strong>$65.00</strong></p>
+                <p class="shipping">Free shipping</p>
+              </div>
+              <p class="product-discr">
+                Ready to dress up or down, these classic canvas Chucks are an
+                everyday wardrobe staple.
+              </p>
+              <a
+                class="product-more-info"
+                href="https://www.converse.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >More information &rarr;</a
+              >
+              <div class="product-colors">
+                <div class="product-color black"></div>
+                <div class="product-color blue"></div>
+                <div class="product-color yellow"></div>
+                <div class="product-color red"></div>
+                <div class="product-color green"></div>
+                <div class="product-color brown"></div>
+              </div>
+            </div>
+            <div>
+              <h3 class="product-details-title">Product details</h3>
+              <ul class="product-details-list">
+                <li class="details-list-item">
+                  Lightweight, durable canvas sneaker
+                </li>
+                <li class="details-list-item">
+                  Lightly padded footbed for added comfort
+                </li>
+                <li class="details-list-item">
+                  Iconic Chuck Taylor ankle patch
+                </li>
+              </ul>
             </div>
           </div>
-          <div>
-            <h3 class="product-details-title">Product details</h3>
-            <ul class="product-details-list">
-              <li class="details-list-item">
-                Lightweight, durable canvas sneaker
-              </li>
-              <li class="details-list-item">
-                Lightly padded footbed for added comfort
-              </li>
-              <li class="details-list-item">Iconic Chuck Taylor ankle patch</li>
-            </ul>
-          </div>
-        </div>
-        <button class="add-card-btn">Add to card</button>
-      </article>
+          <button class="add-card-btn">Add to card</button>
+        </article>
+      </div>
+      <a class="back" href="./index.html"><span>←</span>Back</a>
     </div>
   </body>
 </html>
