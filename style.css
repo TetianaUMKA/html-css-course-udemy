@@ -183,14 +183,14 @@ h3 {
 
 /* ASIDE */
 aside {
-  padding: 40px 0;
+  padding: 60px 0;
   border-top: 3px solid #257cbb;
   border-bottom: 3px solid #257cbb;
   background: linear-gradient(to left, #b0d4ee, #f2f2f2, #dbdbdb, #eaeaea);
 }
 
 h4 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 18px;
   text-align: center;
 }
