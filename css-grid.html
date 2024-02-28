@@ -95,6 +95,7 @@
         background-color: rgba(0, 0, 0, 0.812);
         font-size: 40px;
         margin-bottom: 50px;
+        gap: 50px;
 
         width: 700px;
         height: 600px;
@@ -105,6 +106,20 @@
         grid-template-rows: 250px 100px;
 
         /* Aligning tracks inside container: distribute empty space */
+        justify-content: center;
+        /* justify-content: space-between; */
+        /* align-content: end; */
+        align-content: center;
+
+        /* Aligning items INSIDE cells: moving items around inside cells */
+        align-items: center;
+        justify-items: center;
+      }
+      .el--test {
+        background-color: green;
+        height: 100px;
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
@@ -160,7 +175,7 @@
 
       <div class="container--4">
         <div class="el el--1">(1)</div>
-        <div class="el el--3">(3)</div>
+        <div class="el el--test">(3)</div>
         <div class="el el--4">(4)</div>
         <div class="el el--5">(5)</div>
         <div class="el el--6">(6)</div>
